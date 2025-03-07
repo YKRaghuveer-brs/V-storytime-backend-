@@ -6,7 +6,7 @@ import { checkToken } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
-router.get("/", checkToken, getCategories);
+router.get("/", getCategories);
 
 
 //------------------------ ADMIN CONTROLS ------------------------
